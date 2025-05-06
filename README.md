@@ -11,6 +11,12 @@ Before using the tool, you need to install the required libraries. You can do th
 pip install -r requirements.txt
 ```
 
+## Download
+
+```
+git clone https://github.com/abdullahfayyad92/subhawk.git
+```
+
 ## Usage
 Once the dependencies are installed, you can run the script with the desired options:
 ```
