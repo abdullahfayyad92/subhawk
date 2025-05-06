@@ -1,16 +1,16 @@
-# subhawk
+**`#`** subhawk
 
 
 **subhawk** is a simple subdomain enumeration tool that discovers subdomains by using a custom or built-in wordlist.
 
-## Requirements
+**`##`** Requirements
 
 Before using the tool, you need to install the required libraries. You can do this easily by running the following command:
 
 ```bash
 pip install -r requirements.txt
 
-## Usage
+**`## Usage`**
 
 Once the dependencies are installed, you can run the script with the desired options:
 python subhawk.py -d example.com
