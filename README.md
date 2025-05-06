@@ -10,8 +10,9 @@ Before using the tool, you need to install the required libraries. You can do th
 ```bash
 pip install -r requirements.txt
 
-**`## Usage`**
+## Usage
 
+```
 Once the dependencies are installed, you can run the script with the desired options:
 python subhawk.py -d example.com
 
