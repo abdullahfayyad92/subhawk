@@ -15,7 +15,7 @@ try:
     parser.add_argument('-d', '--domain', help='target domain [example.com]', type=str, required=True)
     parser.add_argument('-v', '--verbose', help='show valid and invalid subdomains', action='store_true')
     parser.add_argument('-o', '--output', help='save the valid subdomains in a text file' )
-    parser.add_argument('-l', '--list', help='add list of subdomains [example.txt]' )
+    parser.add_argument('-w', '--wordlist', help='add list of subdomains [example.txt]' )
     parser.add_argument('-t', '--timeout', help='set the timeout (in seconds) for each request. default is 3 seconds',type=int )
 
 
@@ -41,14 +41,14 @@ try:
         print("\n\n")
 
         # Check if the user provided a list or is using the default list 
-        listOfSubs = None
-        if bool(args.list):
-            listOfSubs = open (args.list,"r")
+        wordlist = None
+        if bool(args.wordlist):
+            wordlist = open (args.wordlist,"r")
 
         else:
-            listOfSubs = open ("subs.txt","r")
+            wordlist = open ("subs.txt","r")
 
-        subs = listOfSubs.read()
+        subs = wordlist.read()
 
 
         # Check if the user provided a timeout 
