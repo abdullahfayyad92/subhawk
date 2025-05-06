@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-```
+```bash
 Once the dependencies are installed, you can run the script with the desired options:
 python subhawk.py -d example.com
 
